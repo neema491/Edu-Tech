@@ -1,0 +1,17 @@
+.dashboard-container {
+    display: flex;
+  }
+  .main-content {
+    margin-left: 220px; /* Adjust this value if the sidebar width changes */
+    padding: 20px;
+    width: 100%;
+  }
+  .welcome-message {
+    margin-bottom: 20px;
+  }
+  .widgets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
