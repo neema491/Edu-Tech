@@ -3,10 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-messages',
   standalone: true,
-  imports: [],
   templateUrl: './messages.component.html',
-  styleUrl: './messages.component.css'
+  styleUrls: ['./messages.component.css']
 })
-export class MessagesComponent {
-
+export class MessagesComponent { 
+  messages = [
+    { sender: 'Teacher 1', content: 'Please submit your assignment by tomorrow.', time: '10:00 AM' },
+    { sender: 'Teacher 2', content: 'Exam results will be announced next week.', time: '12:00 PM' },
+    { sender: 'Teacher 3', content: 'New lecture materials are available.', time: '3:00 PM' }
+  ];
 }

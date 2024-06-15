@@ -1,7 +1,41 @@
-.widget {
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-  }
-  
+.messages-container {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.messages-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.sender {
+  color: #333;
+}
+
+.time {
+  color: #888;
+}
+
+.message-content {
+  margin-top: 5px;
+  color: #555;
+}
