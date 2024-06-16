@@ -10,12 +10,13 @@ import { MyAssignmentsComponent } from '../my-assignments/my-assignments.compone
 import { NoticeBoardComponent } from '../notice-board/notice-board.component';
 import { TeacherReviewComponent } from '../teacher-review/teacher-review.component';
 import { MyClassesComponent } from "../my-classes/my-classes.component";
+import { TripsComponent } from '../trips/trips.component';
 @Component({
     selector: 'app-dashboard',
     standalone: true,
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.css',
-    imports: [SidebarComponent, MessagesComponent, BalanceComponent, GradesComponent, ClassesComponent, CalendarComponent, MyAssignmentsComponent, NoticeBoardComponent, TeacherReviewComponent, CommonModule, MyClassesComponent,ClassesComponent]
+    imports: [SidebarComponent, MessagesComponent, BalanceComponent, GradesComponent,TripsComponent, ClassesComponent, CalendarComponent, MyAssignmentsComponent, NoticeBoardComponent, TeacherReviewComponent, CommonModule, MyClassesComponent,ClassesComponent]
 })
 export class DashboardComponent {
 
