@@ -7,10 +7,10 @@ import { ExamResultsComponent } from './exam-results/exam-results.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TripsComponent } from './trips/trips.component';
 import { EventsComponent } from './events/events.component';
-import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent} from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import path from 'path';
+import { ProfileComponent } from './profile/profile.component';
 
 
 export const routes: Routes = [
@@ -22,9 +22,9 @@ export const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent },
   { path: 'trips', component: TripsComponent },
   { path: 'events', component: EventsComponent },
-  { path: 'profile', component: ProfileComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'Login', component: LoginComponent }, 
+  { path: 'profile', component: ProfileComponent }, 
 ];
 
 @NgModule({
