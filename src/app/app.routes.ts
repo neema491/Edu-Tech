@@ -10,6 +10,7 @@ import { EventsComponent } from './events/events.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent} from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import path from 'path';
 
 
 export const routes: Routes = [
@@ -20,9 +21,10 @@ export const routes: Routes = [
   { path: 'exam-results', component: ExamResultsComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'trips', component: TripsComponent },
-  { path: 'events', component: EventsComponent }
-  { path: 'profile', component: ProfileComponent }
-  { path: 'signup', component: SignupComponent }
+  { path: 'events', component: EventsComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'Login', component: LoginComponent }, 
 ];
 
 @NgModule({

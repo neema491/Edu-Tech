@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CommonModule } from '@angular/common';
+
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { TopNavComponent } from '../top-nav/top-nav.component';
 import { MessagesComponent } from '../messages/messages.component';
 import { BalanceComponent } from '../balance/balance.component';
 import { GradesComponent } from '../grades/grades.component';
@@ -16,7 +19,7 @@ import { TripsComponent } from '../trips/trips.component';
     standalone: true,
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.css',
-    imports: [SidebarComponent, MessagesComponent, BalanceComponent, GradesComponent,TripsComponent, ClassesComponent, CalendarComponent, MyAssignmentsComponent, NoticeBoardComponent, TeacherReviewComponent, CommonModule, MyClassesComponent,ClassesComponent]
+    imports: [ MatSlideToggleModule,SidebarComponent,TopNavComponent, MessagesComponent, BalanceComponent, GradesComponent,TripsComponent, ClassesComponent, CalendarComponent, MyAssignmentsComponent, NoticeBoardComponent, TeacherReviewComponent, CommonModule, MyClassesComponent,ClassesComponent]
 })
 export class DashboardComponent {
 
