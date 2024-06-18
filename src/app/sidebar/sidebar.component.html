@@ -1,12 +1,35 @@
-<div class="sidebar">
+<mat-card class="sidebar">
+<div>
+
+    <mat-card-content>School Record</mat-card-content>
+    <mat-card-content>
     <ul>
-      <li><a routerLink="/Profile">Profile</a></li>
-      <li><a routerLink="/classes">Classes</a></li>
-      <li><a routerLink="/payment-info">Payment Info</a></li>
-      <li><a routerLink="/exam-results">Exam Results</a></li>
-      <li><a routerLink="/schedule">Schedule</a></li>
-      <li><a routerLink="/trips">Trips</a></li>
-      <li><a routerLink="/events">Events</a></li>
+      <mat-list-item>
+        
+        <mat-icon aria-hidden="false"  fontIcon="home"></mat-icon>
+        <a routerLink="/Profile">Profile</a></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon aria-hidden="false"  fontIcon="book"></mat-icon>
+        <a routerLink="/classes">Classes</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon aria-hidden="false"  fontIcon="money"></mat-icon>
+        <a routerLink="/payment-info">Payment Info</a></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon aria-hidden="false"  fontIcon="trophy"></mat-icon>
+        <a routerLink="/exam-results">Exam Results</a></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item><mat-icon aria-hidden="false"  fontIcon="clipboard"></mat-icon><a routerLink="/schedule">Schedule</a> </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item><mat-icon aria-hidden="false"  fontIcon="bus"></mat-icon><a routerLink="/trips">Trips</a></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item><mat-icon aria-hidden="false"  fontIcon="calendar"></mat-icon><a routerLink="/events">Events</a></mat-list-item>
+      <mat-divider></mat-divider>
       
     </ul>
+  </mat-card-content>
   </div>
+</mat-card>
