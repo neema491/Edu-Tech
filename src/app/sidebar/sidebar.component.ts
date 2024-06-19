@@ -10,4 +10,17 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrls: ['./sidebar.component.css'],
   imports: [MatCardModule,MatIconModule,MatListModule, MatDividerModule],
 })
-export class SidebarComponent { }
+export class SidebarComponent {
+  avatarUrl: string = 'path/to/default/avatar.png'; // Default avatar image
+
+  onFileSelected(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e: any) => {
+        this.avatarUrl = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+}

@@ -1,33 +1,53 @@
 .sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .sidebar ul li a:hover {
-    text-decoration: underline;
-  }
-  .title{
-    font-family: 'Arial', sans-serif;
-  font-size: 1.25rem;
- 
+  width: 200px;
+  height: 100vh; /* Ensures sidebar takes full height of the viewport */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the height calculation */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds sidebar height */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.20rem;
   font-weight: bold;
   color: #92919d;
-  }
-  
+}
+
+.avatar-upload {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-upload .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.avatar-upload input[type="file"] {
+  display: block;
+  margin: 0 auto;
+}
