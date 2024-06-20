@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatCard, MatCardHeader, MatCardTitle } from '@angular/material/card';
 
 @Component({
   selector: 'app-messages',
   standalone: true,
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css'],
-  imports: [CommonModule],
+  imports: [CommonModule,MatCardHeader,MatCardTitle,MatCard],
 })
 export class MessagesComponent { 
   messages = [
