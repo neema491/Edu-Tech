@@ -3,6 +3,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { faHome, faBook, faMoneyBill, faTrophy, faClipboard, faBus, faCalendar, faUser, } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
@@ -11,7 +12,15 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [MatCardModule,MatIconModule,MatListModule, MatDividerModule],
 })
 export class SidebarComponent {
-  avatarUrl: string = 'path/to/default/avatar.png'; // Default avatar image
+  faHome = faHome;
+  faBook = faBook;
+  faMoneyBill = faMoneyBill;
+  faTrophy = faTrophy;
+  faClipboard = faClipboard;
+  faBus = faBus;
+  faCalendar = faCalendar;
+  faUser = faUser;
+  avatarUrl: string = 'assets/avatar.jpg'; // Updated to point to the default avatar image
 
   onFileSelected(event: any) {
     const file = event.target.files[0];

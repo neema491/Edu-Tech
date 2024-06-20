@@ -1,10 +1,10 @@
 .sidebar {
   width: 200px;
-  height: 100vh; /* Ensures sidebar takes full height of the viewport */
+  height: 100vh;
   background-color: #f4f4f4;
   padding: 20px;
-  box-sizing: border-box; /* Include padding in the height calculation */
-  overflow-y: auto; /* Enable vertical scroll if content exceeds sidebar height */
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -15,6 +15,8 @@
 
 .sidebar ul li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar ul li a {
@@ -26,10 +28,13 @@
 .sidebar ul li a:hover {
   text-decoration: underline;
 }
+.mat-icon {
+  margin-right: 10px;
+}
 
 .title {
   font-family: 'Arial', sans-serif;
-  font-size: 1.20rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #92919d;
 }
@@ -48,6 +53,20 @@
 }
 
 .avatar-upload input[type="file"] {
-  display: block;
-  margin: 0 auto;
+  display: none; /* Hide the file input */
+}
+
+.avatar-upload .upload-button {
+  display: inline-block;
+  padding: 4px 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.avatar-upload .upload-button:hover {
+  background-color: #0056b3;
 }
