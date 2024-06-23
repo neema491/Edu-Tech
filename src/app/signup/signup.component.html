@@ -1,1 +1,54 @@
-<p>signup works!</p>
+<mat-card class="container" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title> Welcome to Tichaa </mat-card-title>
+        <mat-card-subtitle>
+          Need an account? <span class="register-text">Register</span>
+        </mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-chip-set class="matchips" aria-label="Role selection">
+        <mat-chip>Admin</mat-chip>
+        <mat-chip>Teacher</mat-chip>
+        <mat-chip>Student</mat-chip>
+      </mat-chip-set>
+      <mat-card-title>
+        Sign in
+      </mat-card-title>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="admin@school.org" required>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" required>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+  
+      <mat-checkbox>Remember me</mat-checkbox>
+      <button mat-raised-button color="primary" class="full-width">Login</button>
+  
+      <a mat-button href="#">Forgot Password?</a>
+  
+      <div class="social-login">
+        <p>OR</p>
+        <button mat-icon-button aria-label="Sign in with Google">
+          <mat-icon svgIcon="google"></mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Sign in with Facebook">
+          <mat-icon svgIcon="facebook"></mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Sign in with Twitter">
+          <mat-icon svgIcon="twitter"></mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Sign in with LinkedIn">
+          <mat-icon svgIcon="linkedin"></mat-icon>
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
