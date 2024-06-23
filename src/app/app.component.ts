@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { IconService } from './icon.service'; 
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,5 +9,5 @@ import { IconService } from './icon.service';
 })
 export class AppComponent {
   title = 'Edu-Tech';
-  constructor(private iconService: IconService) {}
+  constructor() {}
 }
